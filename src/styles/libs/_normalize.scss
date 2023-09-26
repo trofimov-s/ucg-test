@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+body,
+p,
+ul,
+li,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}

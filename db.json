@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Leanne",
+      "last_name": "Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "password": "password1",
+      "user_type": "Admin"
+    },
+    {
+      "id": 2,
+      "first_name": "Ervin",
+      "last_name": "Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "password": "password2",
+      "user_type": "Driver"
+    },
+    {
+      "id": 3,
+      "first_name": "Clementine",
+      "last_name": "Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "password": "password3",
+      "user_type": "Admin"
+    },
+    {
+      "id": 4,
+      "first_name": "Patricia",
+      "last_name": "Lebsack",
+      "username": "Karianne",
+      "email": "Julianne.OConner@kory.org",
+      "password": "password4",
+      "user_type": "Driver"
+    },
+    {
+      "id": 5,
+      "first_name": "Chelsey",
+      "last_name": "Dietrich",
+      "username": "Kamren",
+      "email": "Lucio_Hettinger@annie.ca",
+      "password": "password5",
+      "user_type": "Admin"
+    },
+    {
+      "id": 6,
+      "first_name": "Dennis",
+      "last_name": "Schulist",
+      "username": "Leopoldo_Corkery",
+      "email": "Karley_Dach@jasper.info",
+      "password": "password6",
+      "user_type": "Driver"
+    },
+    {
+      "id": 7,
+      "first_name": "Kurtis",
+      "last_name": "Weissnat",
+      "username": "Elwyn.Skiles",
+      "email": "Telly.Hoeger@billy.biz",
+      "password": "password7",
+      "user_type": "Admin"
+    },
+    {
+      "id": 8,
+      "first_name": "Nicholas",
+      "last_name": "Runolfsdottir",
+      "username": "Maxime_Nienow",
+      "email": "Sherwood@rosamond.me",
+      "password": "password8",
+      "user_type": "Driver"
+    },
+    {
+      "id": 9,
+      "first_name": "Glenna",
+      "last_name": "Reichert",
+      "username": "Delphine",
+      "email": "Chaim_McDermott@dana.io",
+      "password": "password9",
+      "user_type": "Admin"
+    },
+    {
+      "id": 10,
+      "first_name": "Clementina",
+      "last_name": "DuBuque",
+      "username": "Moriah.Stanton",
+      "email": "Rey.Padberg@karina.biz",
+      "password": "password10",
+      "user_type": "Driver"
+    }
+  ]
+}
