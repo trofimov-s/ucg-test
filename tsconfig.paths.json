@@ -2,6 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@core": ["src/app/core/index.ts"],
+      "@core/models/api": ["src/app/core/models/api/index.ts"],
+      "@core/models/entities": ["src/app/core/models/entities/index.ts"],
+      "@core/constants/api": ["src/app/core/constants/api/index.ts"],
+      "@core/enums/entities": ["src/app/core/enums/entities/index.ts"],
+      "@core/services/api": ["src/app/core/services/api/index.ts"],
+      "@shared/button": ["src/app/shared/button/index.ts"]
     }
   }
 }
