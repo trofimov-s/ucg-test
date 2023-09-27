@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  .action-btn {
+    align-self: flex-end;
+  }
+}

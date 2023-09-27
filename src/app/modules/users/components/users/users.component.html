@@ -1,0 +1,8 @@
+<app-button class="action-btn" text="Create User" (click)="createUserHanlder()" />
+<ng-container *ngIf="users$ | async as users">
+  <app-table
+    [entities]="users"
+    [tableProps]="tableProps"
+    (rowClick)="rowClickHandler($event)"
+  ></app-table>
+</ng-container>

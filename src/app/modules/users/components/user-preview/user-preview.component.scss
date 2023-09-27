@@ -1,0 +1,72 @@
+@import 'vars';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  margin: 0 auto;
+
+  max-width: 584px;
+  padding: 26px;
+
+  background-color: $white;
+  box-shadow: 0px 0px 30px #523f690d;
+
+  border: 1px solid #ebedf3;
+  border-radius: 6px;
+
+  .header-block {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      font-size: 16px;
+      font-weight: bold;
+      color: $gray-800;
+    }
+
+    &__close-icon {
+      cursor: pointer;
+    }
+  }
+
+  .user-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+
+      &::ng-deep {
+        .form-field__icon.email {
+          top: 30px;
+          left: 16px;
+
+          & ~ .form-field__input[name='email'] {
+            padding-left: 46px;
+          }
+        }
+
+        .form-field__icon.type {
+          top: 30px;
+          right: 16px;
+
+          pointer-events: none;
+        }
+      }
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__cta-submit {
+      margin-left: auto;
+    }
+  }
+}

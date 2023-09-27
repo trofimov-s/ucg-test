@@ -1,0 +1,25 @@
+<table class="table">
+  <thead class="thead">
+    <tr class="thead__row">
+      <th
+        [width]="100 / tableProps.length + '%'"
+        class="thead__cell"
+        *ngFor="let prop of tableProps; trackBy: trackByTableProps"
+      >
+        {{ prop.label | uppercase }}
+      </th>
+    </tr>
+  </thead>
+  <tbody class="tbody">
+    <tr
+      class="tbody__row"
+      *ngFor="let entity of entities; trackBy: trackByUser"
+      (click)="rowClickHanlder(entity)"
+    >
+      <td class="tbody__cell" *ngFor="let prop of tableProps; trackBy: trackByTableProps">
+        {{ entity[prop.key] }}
+      </td>
+    </tr>
+    <tr></tr>
+  </tbody>
+</table>

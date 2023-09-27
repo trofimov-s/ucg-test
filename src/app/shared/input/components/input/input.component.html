@@ -1,0 +1,17 @@
+<div class="form-field">
+  <label class="form-field__label" [for]="fieldName">{{ label }}</label>
+  <app-icon [class]="fieldName" class="form-field__icon" *ngIf="icon" [icon]="icon" />
+  <input
+    [type]="type"
+    class="form-field__input"
+    [id]="fieldName"
+    [name]="fieldName"
+    [value]="value"
+    [required]=""
+    (input)="onChanged($event)"
+    (blur)="touched()"
+    (blur)="toggleFocus(false)"
+    (focus)="toggleFocus(true)"
+    [required]="required"
+  />
+</div>

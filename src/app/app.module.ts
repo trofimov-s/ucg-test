@@ -4,11 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from '@core';
-import { ButtonModule } from './shared/button/button.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HttpClientModule, CoreModule, ButtonModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, CoreModule],
   providers: [],
   bootstrap: [AppComponent],
 })

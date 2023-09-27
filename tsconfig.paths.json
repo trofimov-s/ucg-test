@@ -6,9 +6,17 @@
       "@core/models/api": ["src/app/core/models/api/index.ts"],
       "@core/models/entities": ["src/app/core/models/entities/index.ts"],
       "@core/constants/api": ["src/app/core/constants/api/index.ts"],
-      "@core/enums/entities": ["src/app/core/enums/entities/index.ts"],
+      "@core/enums": ["src/app/core/enums/index.ts"],
       "@core/services/api": ["src/app/core/services/api/index.ts"],
-      "@shared/button": ["src/app/shared/button/index.ts"]
+      "@core/validation": ["src/app/core/validation/index.ts"],
+      "@user": ["src/app/modules/users/index.ts"],
+      "@shared/button": ["src/app/shared/button/index.ts"],
+      "@shared/table": ["src/app/shared/table/index.ts"],
+      "@shared/input": ["src/app/shared/input/index.ts"],
+      "@shared/icon": ["src/app/shared/icon/index.ts"],
+      "@shared/directive": ["src/app/shared/directive/index.ts"],
+      "@shared/toast": ["src/app/shared/toast/index.ts"],
+      "@utils": ["src/app/utils/index.ts"]
     }
   }
 }

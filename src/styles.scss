@@ -1,2 +1,18 @@
 @import 'fonts';
 @import 'normalize';
+@import 'vars';
+
+html {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+
+  background-color: $gray-400;
+}

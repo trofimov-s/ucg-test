@@ -1,0 +1,18 @@
+<div class="form-field">
+  <label class="form-field__label" [for]="fieldName">{{ label }}</label>
+  <app-icon [class]="fieldName" class="form-field__icon" *ngIf="icon" [icon]="icon" />
+  <select
+    class="form-field__select"
+    [required]="required"
+    (input)="onChanged($event)"
+    (blur)="touched()"
+    [id]="fieldName"
+    [name]="fieldName"
+    [value]="value"
+  >
+    <option value="" disabled></option>
+    <option *ngFor="let option of options">
+      {{ option }}
+    </option>
+  </select>
+</div>

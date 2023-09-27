@@ -8,8 +8,11 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input()
-  type: 'primary' | 'warn' = 'primary';
+  role: 'primary' | 'warn' = 'primary';
 
   @Input({ required: true })
   text: string;
+
+  @Input()
+  type: 'button' | 'reset' | 'submit' = 'button';
 }

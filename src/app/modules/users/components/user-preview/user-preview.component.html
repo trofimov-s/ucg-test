@@ -1,0 +1,79 @@
+<div class="header-block">
+  <p class="header-block__title">{{ title }}</p>
+  <app-icon class="header-block__close-icon" icon="close" (click)="closeHanlder()" />
+</div>
+
+<form form class="user-form" [formGroup]="userForm" (ngSubmit)="submit()">
+  <div class="user-form__inputs">
+    <app-input
+      [id]="'username'"
+      [fieldName]="'username'"
+      [formControlName]="'username'"
+      [required]="true"
+      label="Username"
+    />
+
+    <app-input
+      [id]="'first_name'"
+      [fieldName]="'first_name'"
+      [formControlName]="'first_name'"
+      [required]="true"
+      label="First name"
+    />
+
+    <app-input
+      [id]="'last_name'"
+      [fieldName]="'last_name'"
+      [formControlName]="'last_name'"
+      [required]="true"
+      label="Last name"
+    />
+
+    <app-input
+      [id]="'email'"
+      [fieldName]="'email'"
+      [formControlName]="'email'"
+      [required]="true"
+      icon="email"
+      label="Email"
+    />
+
+    <app-select
+      [id]="'type'"
+      [fieldName]="'type'"
+      [formControlName]="'type'"
+      [required]="true"
+      [options]="typeOptions"
+      [parentForm]="userForm"
+      icon="arrow_drop_down"
+      label="Type"
+    />
+
+    <app-input
+      [id]="'password'"
+      [fieldName]="'password'"
+      [formControlName]="'password'"
+      [required]="true"
+      type="password"
+      label="Password"
+    />
+
+    <app-input
+      [id]="'repeat_password'"
+      [fieldName]="'repeat_password'"
+      [formControlName]="'repeat_password'"
+      [required]="true"
+      type="password"
+      label="Repeat password"
+    />
+  </div>
+
+  <div class="user-form__actions">
+    <app-button *ngIf="isEditMode" text="Delete" role="warn" (click)="deleteUser()" />
+    <app-button
+      class="user-form__cta-submit"
+      type="submit"
+      [text]="isEditMode ? 'Save' : 'Create'"
+    />
+  </div>
+</form>

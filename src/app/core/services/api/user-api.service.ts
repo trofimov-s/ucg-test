@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, catchError, of } from 'rxjs';
 
 import { BaseApiService } from './base-api';
 import { User } from '@core/models/entities';
@@ -17,7 +17,16 @@ export class UserApiService extends BaseApiService {
   }
 
   getUserById(id: string | number): Observable<User> {
-    return this.http.get<User>(`${this.buildUrl((e: Endpoints) => e.users)}/${id}`);
+    return this.http
+      .get<User>(`${this.buildUrl((e: Endpoints) => e.users)}/${id}`)
+      .pipe(catchError(() => of(null)));
+  }
+
+  createUser(user: Omit<User, 'id'>): Observable<User> {
+    return this.http.post<User>(
+      this.buildUrl((e: Endpoints) => e.users),
+      user
+    );
   }
 
   updateUser(id: string | number, body: Partial<User>): Observable<User> {

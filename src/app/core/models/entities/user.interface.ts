@@ -1,4 +1,4 @@
-import { UserRole } from '@core/enums/entities';
+import { UserRole } from 'src/app/core/enums';
 
 export interface User {
   id: number;

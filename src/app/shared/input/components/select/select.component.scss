@@ -1,0 +1,53 @@
+@import 'vars';
+
+:host {
+  .form-field {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    &__label {
+      position: relative;
+
+      margin-bottom: 2px;
+
+      font-size: 13px;
+      color: $gray-800;
+
+      &:has(~ select:required)::after {
+        content: '*';
+      }
+    }
+
+    &__icon {
+      position: absolute;
+    }
+
+    &__select {
+      height: 46px;
+      appearance: none;
+
+      padding: 0 16px;
+
+      color: $gray-800;
+      font-family: inherit;
+      font-weight: 300;
+      line-height: 1;
+
+      background-color: $gray-200;
+      border-radius: 6px;
+      border: none;
+
+      outline: none;
+
+      option:disabled {
+        display: none;
+      }
+    }
+  }
+
+  &.ng-invalid.ng-dirty .form-field__select:not(:focus) {
+    border: 1px solid $pink-300;
+  }
+}

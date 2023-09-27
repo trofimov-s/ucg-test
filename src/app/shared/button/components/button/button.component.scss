@@ -33,7 +33,7 @@
   }
 
   &--warn {
-    background-color: $pink;
-    @include btnShadow($pink-light);
+    background-color: $pink-500;
+    @include btnShadow($pink-100);
   }
 }

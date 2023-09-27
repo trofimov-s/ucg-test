@@ -89,6 +89,15 @@
       "email": "Rey.Padberg@karina.biz",
       "password": "password10",
       "user_type": "Driver"
+    },
+    {
+      "username": "test",
+      "first_name": "john",
+      "last_name": "doe",
+      "email": "test@tes.com",
+      "password": "password1",
+      "user_type": "Admin",
+      "id": 11
     }
   ]
 }

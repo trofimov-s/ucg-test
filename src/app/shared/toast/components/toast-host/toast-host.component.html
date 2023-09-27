@@ -1,0 +1,7 @@
+<div
+  class="notification"
+  [class]="'notification--' + notif.type"
+  *ngFor="let notif of notificationData$ | async"
+>
+  <p>{{ notif.msg }}</p>
+</div>
